@@ -1,0 +1,10 @@
+{{page-title "UserDetails"}}
+{{outlet}}
+
+<h2>User Details</h2>
+
+<ul>
+  {{#each this.model as |user|}}
+    <li>{{user.name}} - Age: {{user.age}}</li>
+  {{/each}}
+</ul>
